@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>PICKMENU</title>
+  <meta >
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta http-equiv="x-ua-compatible" content= "ie-edge">
+  <link rel="stylesheet" type="text/css" href="css/bootstrap.css">
+  <link rel="stylesheet" type="text/css" href="css/main.css">
+  <link href="https://fonts.googleapis.com/css2?family=Codystar&family=Crushed&display=swap" rel="stylesheet">
+</head>
+<body>
+  <!-- ****************** navegacion *********************************-->
+  <header>
+    <nav class="navbar navbar-expand-lg navbar-light fixed-top bg-white">
+      <div class="container">
+        <a class="navbar-brand tlBrand text-warning" href="#">PICKMENU</a>
+        <!-- <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button> -->
+        <ul class="navbar-nav d-none d-lg-flex ml-2">
+          <li class="nav-item"><a class="btn btn-outline-warning" href="login.html"><svg class="bi bi-person-fill" width="1em" height="1em" viewBox="0 0 16 16" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+            <path fill-rule="evenodd" d="M3 14s-1 0-1-1 1-4 6-4 6 3 6 4-1 1-1 1H3zm5-6a3 3 0 100-6 3 3 0 000 6z" clip-rule="evenodd"/>
+          </svg> Iniciar sesi&oacute;n</a></li>
+          
+          <li class="nav-item ml-2"><a class="btn btn-warning text-light" href="register.html"><svg class="bi bi-flag" width="1em" height="1em" viewBox="0 0 16 16" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+            <path fill-rule="evenodd" d="M3.5 1a.5.5 0 01.5.5v13a.5.5 0 01-1 0v-13a.5.5 0 01.5-.5z" clip-rule="evenodd"/>
+            <path fill-rule="evenodd" d="M3.762 2.558C4.735 1.909 5.348 1.5 6.5 1.5c.653 0 1.139.325 1.495.562l.032.022c.391.26.646.416.973.416.168 0 .356-.042.587-.126a8.89 8.89 0 00.593-.25c.058-.027.117-.053.18-.08.57-.255 1.278-.544 2.14-.544a.5.5 0 01.5.5v6a.5.5 0 01-.5.5c-.638 0-1.18.21-1.734.457l-.159.07c-.22.1-.453.205-.678.287A2.719 2.719 0 019 9.5c-.653 0-1.139-.325-1.495-.562l-.032-.022c-.391-.26-.646-.416-.973-.416-.833 0-1.218.246-2.223.916a.5.5 0 11-.515-.858C4.735 7.909 5.348 7.5 6.5 7.5c.653 0 1.139.325 1.495.562l.032.022c.391.26.646.416.973.416.168 0 .356-.042.587-.126.187-.068.376-.153.593-.25.058-.027.117-.053.18-.08.456-.204 1-.43 1.64-.512V2.543c-.433.074-.83.234-1.234.414l-.159.07c-.22.1-.453.205-.678.287A2.719 2.719 0 019 3.5c-.653 0-1.139-.325-1.495-.562l-.032-.022c-.391-.26-.646-.416-.973-.416-.833 0-1.218.246-2.223.916a.5.5 0 01-.554-.832l.04-.026z" clip-rule="evenodd"/>
+          </svg> REGISTRA TU RESTAURANTE</a></li>
+          
+        </ul>
+        <div class="d-block d-md-none"><a href="login.html"><svg class="bi bi-people-circle text-info" width="2.5em" height="2.5em" viewBox="0 0 16 16" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+          <path d="M13.468 12.37C12.758 11.226 11.195 10 8 10s-4.757 1.225-5.468 2.37A6.987 6.987 0 008 15a6.987 6.987 0 005.468-2.63z"/>
+          <path fill-rule="evenodd" d="M8 9a3 3 0 100-6 3 3 0 000 6z" clip-rule="evenodd"/>
+          <path fill-rule="evenodd" d="M8 1a7 7 0 100 14A7 7 0 008 1zM0 8a8 8 0 1116 0A8 8 0 010 8z" clip-rule="evenodd"/>
+        </svg></a></div>
+      </div>
+    </nav>--
+  </header>
+  <!-- ****************** slider *********************************-->
+  <div id="carouselExampleSlidesOnly" class="carousel slide mt-5" data-ride="carousel">
+    <div class="carousel-inner h">
+      <div class="carousel-item active ">
+          <img src="img/menu_del_dia.jpg" class="w-100 d-block h-100" alt="plato de menu">  
+      </div>
+      <div class="carousel-item ">
+        <img src="img/crear_menu_restaurante.jpg" class="w-100 d-block h-100" alt="plato de menu">  
+    </div>
+    </div>
+  </div>
+  <!-- ****************** bloque filtro  *********************************-->
+  <div class=" shadow container searchpick border">      
+    <div class="text-center mt-n5 bg-white mb-2 pb-2 " ><h5>BUSCA MENUS DEL DIA EN TU ZONA </h5></div>
+    <form class="form-row mt-2">
+        <div class="form-group col-lg-3">
+        <select id="inputState" class="form-control">
+          <option selected>Ciudad...</option>
+          <option>...</option>
+        </select>
+      </div>
+      <div class="form-group col-lg-4">
+        <select id="inputState" class="form-control">
+          <option selected>Tipo de comida...</option>
+          <option>...</option>
+        </select>
+      </div>
+      <div class="form-group col-lg-2 col-md-6 col-6  text-center ">
+        <label for="formControlRange">Precio</label>
+        <input type="range" class="form-control-range" id="formControlRange">
+      </div>
+      <div class="form-group col-lg-3 col-md-6 col-6 ">
+        <button class="btn btn-secondary btn-lg btn-block text-light" type="submit">Buscar</button>
+      </div>   
+    </form> 
+  </div> 
+  
+  <div class="container-fluid badge-light pt-5 pb-5">
+    <div class="row">
+      <!-- ****************** bloque info resultado 1  *********************************-->
+      <div class=" col-xl-3 col-md-6 ">
+        <div class="col ">
+          <div class="card mb-3">
+            <div class="row no-gutters">
+              <div class="col-4 ">
+                <img src="img/restaurante-nombre-del-restaurante1.jpg" class="card-img img-fluid" alt="...">
+              </div>
+              <div class="col-8">
+                <div class="card-body">
+                  <h5 class="tlResult">Nombre del Restaurante</h5>
+                  <p class="typeResult">Tipo de comida</p>
+                  <p class=""><small>Direccion del restaurante</small></p>
+                  <p class="text-right">precio</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- ****************** bloque info resultado 2  *********************************-->
+      <div class="col-xl-3 col-md-6 ">
+        <div class="col ">
+          <div class="card mb-3">
+            <div class="row no-gutters">
+              <div class="col-4">
+                <img src="img/restaurante-nombre-del-restaurante2.jpg" class="card-img img-fluid align-middle" alt="...">
+              </div>
+              <div class="col-8">
+                <div class="card-body">
+                  <h5 class="tlResult">Nombre del Restaurante</h5>
+                  <p class="typeResult">Tipo de comida</p>
+                  <p class=""><small>Direccion del restaurante</small></p>
+                  <p class="text-right">precio</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- ****************** bloque info resultado 3  *********************************-->
+      <div class=" col-xl-3 col-md-6 ">
+        <div class="col ">
+          <div class="card mb-3">
+            <div class="row no-gutters">
+              <div class="col-4 ">
+                <img src="img/restaurante-nombre-del-restaurante2.jpg" class="card-img img-fluid" alt="...">
+              </div>
+              <div class="col-8">
+                <div class="card-body">
+                  <h5 class="tlResult">Nombre del Restaurante</h5>
+                  <p class="typeResult">Tipo de comida</p>
+                  <p class=""><small>Direccion del restaurante</small></p>
+                  <p class="text-right">precio</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- ****************** bloque info resultado 4  *********************************-->
+      <div class=" col-xl-3 col-md-6 ">
+        <div class="col ">
+          <div class="card mb-3">
+            <div class="row no-gutters">
+              <div class="col-4 ">
+                <img src="img/restaurante-nombre-del-restaurante1.jpg" class="card-img img-fluid" alt="...">
+              </div>
+              <div class="col-8">
+                <div class="card-body">
+                  <h5 class="tlResult">Nombre del Restaurante</h5>
+                  <p class="typeResult">Tipo de comida</p>
+                  <p class=""><small>Direccion del restaurante</small></p>
+                  <p class="text-right">precio</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+  </div>
+  </div>
+  
+ 
+
+
+ 
+  <!-- ****************** bloque info uso *********************************--> 
+  <div class="container-fluid bgBlack p-5">
+    <div class="row">
+      <div class="text-center col"><img  src="img/PRUEBA.svg" class="img-fluid" alt=""></div>
+    </div>
+    <div class="container mt-5 ">
+      <div class="row">
+        
+        <div class="col-md-4 col-12 mt-2">
+          <div class="card">
+            <span class="text-center">
+              <svg class="bi bi-person-check text-warning mt-4" width="6em" height="6em" viewBox="0 0 16 16" fill="currentColor" xmlns="http://www.w3.org/2000/svg">2
+              <path fill-rule="evenodd" d="M11 14s1 0 1-1-1-4-6-4-6 3-6 4 1 1 1 1h10zm-9.995-.944v-.002.002zM1.022 13h9.956a.274.274 0 00.014-.002l.008-.002c-.001-.246-.154-.986-.832-1.664C9.516 10.68 8.289 10 6 10c-2.29 0-3.516.68-4.168 1.332-.678.678-.83 1.418-.832 1.664a1.05 1.05 0 00.022.004zm9.974.056v-.002.002zM6 7a2 2 0 100-4 2 2 0 000 4zm3-2a3 3 0 11-6 0 3 3 0 016 0zm6.854.146a.5.5 0 010 .708l-3 3a.5.5 0 01-.708 0l-1.5-1.5a.5.5 0 01.708-.708L12.5 7.793l2.646-2.647a.5.5 0 01.708 0z" clip-rule="evenodd"/>
+              </svg>
+            </span>
+            <div class="card-body">
+              <h5 class="card-title">1. PASO - Reigistra tu Restaurante</h5>
+              <p class="card-text">Proporciona toda la informacion, para que las personas puedan encontrarte.</p>
+            
+              <a href="#" class="btn btn-secondary">Ir al registro</a>
+            </div>
+          </div>        
+        </div> 
+        <div class="col-md-4 col-12 mt-2">
+          <div class="card">
+            <span class="text-center">
+              <svg class="bi bi-file-text text-warning mt-4" width="6em" height="6em" viewBox="0 0 16 16" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                <path fill-rule="evenodd" d="M4 1h8a2 2 0 012 2v10a2 2 0 01-2 2H4a2 2 0 01-2-2V3a2 2 0 012-2zm0 1a1 1 0 00-1 1v10a1 1 0 001 1h8a1 1 0 001-1V3a1 1 0 00-1-1H4z" clip-rule="evenodd"/>
+                <path fill-rule="evenodd" d="M4.5 10.5A.5.5 0 015 10h3a.5.5 0 010 1H5a.5.5 0 01-.5-.5zm0-2A.5.5 0 015 8h6a.5.5 0 010 1H5a.5.5 0 01-.5-.5zm0-2A.5.5 0 015 6h6a.5.5 0 010 1H5a.5.5 0 01-.5-.5zm0-2A.5.5 0 015 4h6a.5.5 0 010 1H5a.5.5 0 01-.5-.5z" clip-rule="evenodd"/>
+              </svg>
+            </span>
+            <div class="card-body">
+              <h5 class="card-title">2. PASO - Construye tu Men&uacute;</h5>
+              <p class="card-text ">Con nuestra herramienta podras <strong>crear Menus de restaurante</strong>, Guardarlos, imprimirlos y tenerlos en linea para compartirlos con tus clientes</p>
+              
+            </div>
+          </div>        
+        </div> 
+        <div class="col-md-4 col-12 mt-2">
+          <div class="card">
+            <span class="text-center">
+              <svg class="bi bi-star-fill text-warning mt-4" width="6em" height="6em" viewBox="0 0 16 16" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.283.95l-3.523 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/>
+              </svg>
+            </span>
+            <div class="card-body">
+              <h5 class="card-title text-center">TODO LISTO</h5>
+              <p class="card-text">Puedes empezar a compartir el <strong>menu de tu restaurante</strong>, tu clientes estaran felices. <br> Ademas pareceras en el buscador donde clientes nuevos econtran tu restaurante.</p>     
+            </div>
+          </div>        
+        </div> 
+
+        
+
+      </div>    
+    </div>
+  </div>
+  <!-- ****************** bloque FOOTER *********************************-->
+  <footer class="pt-4 pt-md-5 bg-light mt-5 border-top pb-5">
+    <div class="container-fluid">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-3 col-6 order-last">
+            <img class="mb-2" src="../../assets/brand/bootstrap-solid.svg" alt="" width="24" height="24">
+            <small class="d-block mb-3 text-muted">© 2020 - Todos los derechos reservados</small>
+            <h3 class="tlBrand">PICKMENU</h3>
+          </div>
+          <div class="col-lg-3 col-6">
+            <ul class="list-unstyled text-small">
+              <li class="d-inline "><a class="text-muted" href="#">
+                <svg id="Bold" enable-background="new 0 0 24 24" height="40" viewBox="0 0 24 25" width="40" xmlns="http://www.w3.org/2000/svg"><path d="m12.004 5.838c-3.403 0-6.158 2.758-6.158 6.158 0 3.403 2.758 6.158 6.158 6.158 3.403 0 6.158-2.758 6.158-6.158 0-3.403-2.758-6.158-6.158-6.158zm0 10.155c-2.209 0-3.997-1.789-3.997-3.997s1.789-3.997 3.997-3.997 3.997 1.789 3.997 3.997c.001 2.208-1.788 3.997-3.997 3.997z"/><path d="m16.948.076c-2.208-.103-7.677-.098-9.887 0-1.942.091-3.655.56-5.036 1.941-2.308 2.308-2.013 5.418-2.013 9.979 0 4.668-.26 7.706 2.013 9.979 2.317 2.316 5.472 2.013 9.979 2.013 4.624 0 6.22.003 7.855-.63 2.223-.863 3.901-2.85 4.065-6.419.104-2.209.098-7.677 0-9.887-.198-4.213-2.459-6.768-6.976-6.976zm3.495 20.372c-1.513 1.513-3.612 1.378-8.468 1.378-5 0-7.005.074-8.468-1.393-1.685-1.677-1.38-4.37-1.38-8.453 0-5.525-.567-9.504 4.978-9.788 1.274-.045 1.649-.06 4.856-.06l.045.03c5.329 0 9.51-.558 9.761 4.986.057 1.265.07 1.645.07 4.847-.001 4.942.093 6.959-1.394 8.453z"/><circle cx="18.406" cy="5.595" r="1.439"/></svg>
+              </a></li>
+              <li class="d-inline ml-3 "><a class="text-muted" href="#">
+                <svg height="40" viewBox="0 -77 512.00213 512" width="40" xmlns="http://www.w3.org/2000/svg"><path d="m501.453125 56.09375c-5.902344-21.933594-23.195313-39.222656-45.125-45.128906-40.066406-10.964844-200.332031-10.964844-200.332031-10.964844s-160.261719 0-200.328125 10.546875c-21.507813 5.902344-39.222657 23.617187-45.125 45.546875-10.542969 40.0625-10.542969 123.148438-10.542969 123.148438s0 83.503906 10.542969 123.148437c5.90625 21.929687 23.195312 39.222656 45.128906 45.128906 40.484375 10.964844 200.328125 10.964844 200.328125 10.964844s160.261719 0 200.328125-10.546875c21.933594-5.902344 39.222656-23.195312 45.128906-45.125 10.542969-40.066406 10.542969-123.148438 10.542969-123.148438s.421875-83.507812-10.546875-123.570312zm0 0" /><path d="m204.96875 256 133.269531-76.757812-133.269531-76.757813zm0 0" fill="#fff"/></svg>
+              </a></li>
+              <li class="d-inline  ml-3 "><a class="text-muted" href="#">
+                <svg id="Bold" enable-background="new 0 0 24 24" height="40" viewBox="0 0 24 24" width="40" xmlns="http://www.w3.org/2000/svg"><path d="m15.997 3.985h2.191v-3.816c-.378-.052-1.678-.169-3.192-.169-3.159 0-5.323 1.987-5.323 5.639v3.361h-3.486v4.266h3.486v10.734h4.274v-10.733h3.345l.531-4.266h-3.877v-2.939c.001-1.233.333-2.077 2.051-2.077z"/></svg>
+              </a></li>
+            </ul>
+          </div>
+
+          <div class="col-lg-3 col-6">
+            <h5>Ayuda</h5>
+            <ul class="list-unstyled text-small">
+              <li><a class="text-muted" href="#">Como funciona PICKMENU?</a></li>
+              <li><a class="text-muted" href="#">preguntas frecuentes</a></li>
+          </div>
+         
+          <div class="col-lg-3 col-6">
+            <h5>Nuestra empresa</h5>
+            <ul class="list-unstyled text-small">
+              <li><a class="text-muted" href="#">Ubicacion</a></li>
+              <li><a class="text-muted" href="#">Politica de privacidad</a></li>
+              <li><a class="text-muted" href="#">Politica de cokies</a></li>
+              <li><a class="text-muted" href="#">Aviso legal</a></li>
+              <li><a class="text-muted" href="#">Contacto</a></li>
+              
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div> 
+  </footer>
+</body>
+<script src="js/jquery-3.4.1.slim.min.js"></script>
+<script src="js/popper.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+</html>
